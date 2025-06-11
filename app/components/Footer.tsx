@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <footer className="mt-5 py-4 text-center text-white">
+    <footer className="mt-5 py-4 text-center">
       <p className="text-sm text-inherit">
         &copy; {new Date().getFullYear()} Browser Extension Magazine. All rights
         reserved.
