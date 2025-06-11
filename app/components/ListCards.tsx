@@ -42,8 +42,6 @@ export default function ListCards() {
     removeExtension(name);
   };
 
-  const currentTheme = resolvedTheme || theme;
-
   if (!mounted)
     return (
       <div className="container mx-auto flex animate-pulse gap-x-2 p-4">

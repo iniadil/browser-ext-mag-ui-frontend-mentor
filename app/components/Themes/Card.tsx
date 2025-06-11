@@ -1,4 +1,3 @@
-import { cx } from "@/app/utils/cx";
 import Image from "next/image";
 import Button from "./Button";
 import Switch from "./Switch";
@@ -16,7 +15,6 @@ type CardProps = {
 
 const Card: React.FC<CardProps> = (props) => {
   const {
-    className = "",
     imageSrc,
     title,
     description,
