@@ -24,9 +24,12 @@ export function cx(
       if (typeof cls === "string") return cls;
 
       if (typeof cls === "object") {
-        return Object.entries(cls)
-          .filter(([_, value]) => Boolean(value))
-          .map(([key]) => key);
+        return (
+          Object.entries(cls)
+            // eslint-disable-next-line @typescript-eslint/no-unused-vars
+            .filter(([_, value]) => Boolean(value))
+            .map(([key]) => key)
+        );
       }
 
       return [];
